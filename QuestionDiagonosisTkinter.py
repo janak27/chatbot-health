@@ -382,7 +382,6 @@ class SignUp(Frame):
         self.btnRegister=Button(self, text="Register", width=10, height=1, bg="blue", command=self.register_user)
         self.btnRegister.pack()
 
-
     def register_user(self):
         file = open(self.username_entry.get(), "w")
         file.write(self.username_entry.get() + "\n")
